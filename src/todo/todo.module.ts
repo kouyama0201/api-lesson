@@ -4,8 +4,8 @@ import { TodoService } from './todo.service';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Module({
-  imports: [PrismaService],
+  imports: [],
   controllers: [TodoController],
-  providers: [TodoService],
+  providers: [TodoService, PrismaService],
 })
 export class TodoModule {}
